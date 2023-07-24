@@ -1,15 +1,25 @@
 {
   "name": "task_1",
   "version": "1.0.0",
-  "description": "",
+  "description": "Webpack",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
     "dev": "webpack --mode development"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "asset",
+    "compilation",
+    "entry",
+    "points",
+    "javascript",
+    "loaders",
+    "output",
+    "webpack",
+    "plugins"
+  ],
+  "author": "Purity Chege",
   "license": "ISC",
   "devDependencies": {
     "jquery": "^3.7.0",
