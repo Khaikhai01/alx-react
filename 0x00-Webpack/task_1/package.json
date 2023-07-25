@@ -22,9 +22,11 @@
   "author": "Purity Chege",
   "license": "ISC",
   "devDependencies": {
-    "jquery": "^3.7.0",
-    "lodash": "^4.17.21",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "jquery": "^3.7.0",
+    "lodash": "^4.17.21"
   }
 }
