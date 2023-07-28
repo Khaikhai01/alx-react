@@ -1,13 +1,13 @@
 {
-  "name": "task_1",
+  "name": "task_2",
   "version": "1.0.0",
-  "description": "Webpack",
+  "description": "Webpack project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development",
-    "build": "webpack",
-    "start-dev": "webpack-dev-Server --open --static"
+    "start-dev": "webpack-dev-server --open --static",
+    "build": "webpack"
   },
   "keywords": [
     "asset",
@@ -20,7 +20,7 @@
     "webpack",
     "plugins"
   ],
-  "author": "Purity Chege",
+  "author": "Wanton Raven",
   "license": "ISC",
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
@@ -30,11 +30,11 @@
     "image-webpack-loader": "^8.1.0",
     "style-loader": "^3.3.3",
     "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
     "jquery": "^3.7.0",
-    "lodash": "^4.17.21",
-    "webpack-dev-server": "^4.15.1"
+    "lodash": "^4.17.21"
   }
 }
