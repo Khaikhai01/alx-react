@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Khaikhai01/alx-react.git/0x01-react_intro/task_4/static/css/main.297ae99b.css",
+    "main.js": "/Khaikhai01/alx-react.git/0x01-react_intro/task_4/static/js/main.b8fa7119.js",
+    "static/js/787.545aecf5.chunk.js": "/Khaikhai01/alx-react.git/0x01-react_intro/task_4/static/js/787.545aecf5.chunk.js",
+    "static/media/holberton.jpg": "/Khaikhai01/alx-react.git/0x01-react_intro/task_4/static/media/holberton.24bab5d633e36ca8d17e.jpg",
+    "index.html": "/Khaikhai01/alx-react.git/0x01-react_intro/task_4/index.html",
+    "main.297ae99b.css.map": "/Khaikhai01/alx-react.git/0x01-react_intro/task_4/static/css/main.297ae99b.css.map",
+    "main.b8fa7119.js.map": "/Khaikhai01/alx-react.git/0x01-react_intro/task_4/static/js/main.b8fa7119.js.map",
+    "787.545aecf5.chunk.js.map": "/Khaikhai01/alx-react.git/0x01-react_intro/task_4/static/js/787.545aecf5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.297ae99b.css",
+    "static/js/main.b8fa7119.js"
+  ]
+}
