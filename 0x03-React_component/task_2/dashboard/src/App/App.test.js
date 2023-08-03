@@ -53,4 +53,21 @@ describe('App', () => {
         expect(wrapper.find(CourseList).length).toBe(1);
       });
     });
+
+    describe('App component', () => {
+      const mockAlert = jest.spyOn(window, 'alert').mockImplementation(() => {});
+    
+      afterEach(() => {
+        mockAlert.mockClear();
+      });
+    
+      it('should call logOut function and display alert when Control and "h" keys are pressed', () => {
+        const logOutMock = jest.fn();
+        render(<App logOut={logOutMock} />);
+        
+        fireEvent.keyDown(document, { key: 'h', ctrlKey: true });
+        expect(logOutMock).toHaveBeenCalled();
+        expect(mockAlert).toHaveBeenCalledWith('Logging you out');
+      });
+    });
 })
