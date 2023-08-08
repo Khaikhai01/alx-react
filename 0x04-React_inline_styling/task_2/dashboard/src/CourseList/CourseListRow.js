@@ -12,6 +12,32 @@ const styles = StyleSheet.create({
   headerCell: {
     fontWeight: 'bold',
   },
+  table: {
+    marginTop: '2em',
+    width: '100%',
+    border: '1px solid #ddd',
+    fontSize: '1.2rem',
+    marginBottom: '15em',
+  },
+  
+  th: {
+    borderBottom: '1px solid #ddd'
+  },
+  
+  th, td: {
+    width: '80%',
+    
+  },
+  
+  table: {
+    marginLeft: 'auto',
+    marginRight: 'auto',
+  },
+  
+  tr: {
+    textAlign: 'left',
+    border: '1px solid #ddd',
+  }
 });
 
 export default function CourseListRow({ isHeader, textFirstCell, textSecondCell }) {
