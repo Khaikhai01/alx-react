@@ -1,33 +1,26 @@
 import React from 'react';
-import { StyleSheet, css } from 'aphrodite';
+import { StyleSheet, css } from "aphrodite";
 
-function Login() {
-    const styles = StyleSheet.create({
-        App: {
-            textAlign: 'center',
-            fontFamily: 'Arial, sans-serif',
-        },          
-        AppBody: {
-            margin: '50px',
-            textAlign: 'left',
-        },
-          
-        input: {
-            marginRight: '10px',
-        }
-    });
+export default function Login () {
     return (
-        <div className={css(styles.App)}>
-            <div className={css(styles.AppBody)}>
-                <p>Login to access the full dashboard</p>
-                <label htmlFor="email">Email: </label>
-                <input type="email" name="email" id="email" className={css(styles.input)} />
-                <label htmlFor="password">Password: </label>
-                <input type="password" name="password" id="password" className={css(styles.input)} />
-                <button>OK</button>
-            </div>  
-        </div>
-    )
+        <body className={css(styleLogin.appbody)}>
+            <p>Login to access the full dashboard</p>
+            <label htmlFor="email">Email:</label>
+            <input className={css(styleLogin.inputlogin)} type="email" name="email" id="email"></input>
+            <label htmlFor="password">Password:</label>
+            <input className={css(styleLogin.inputlogin)} type="password" name="password" id="password"></input>
+            <button>OK</button>
+      </body>
+    );
 }
 
-export default Login;
+const styleLogin = StyleSheet.create({
+    appbody: {
+        textAlign: 'left',
+        margin: '50px'
+    },
+
+    inputlogin: {
+        marginRight: 10,
+    },
+})

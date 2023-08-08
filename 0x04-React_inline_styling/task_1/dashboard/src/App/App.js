@@ -6,9 +6,9 @@ import CourseList from "../CourseList/CourseList";
 import Notifications from "../Notifications/Notifications";
 import BodySectionWithMarginBottom from "../BodySection/BodySectionWithMarginBottom";
 import BodySection from "../BodySection/BodySection";
-import { StyleSheet, css } from "aphrodite";
 import PropTypes from "prop-types";
 import { getLatestNotification } from "../utils/utils";
+import { StyleSheet, css } from 'aphrodite';
 
 class App extends React.Component {
   constructor(props) {
@@ -44,19 +44,10 @@ class App extends React.Component {
   }
 
   render() {
-
-    const styles = StyleSheet.create({
-      app: {
-        height: '100vh',
-        maxWidth: '100vw',
-        position: 'relative',
-        fontFamily: 'Arial, Helvetica, sans-serif',
-      },
-    })
     return (
       <React.Fragment>
         <div className={css(styles.app)}>
-          <div className={css(styles.headingSection)}>
+          <div className="heading-section">
             <Notifications listNotifications={this.listNotifications} />
             <Header />
           </div>
@@ -75,15 +66,25 @@ class App extends React.Component {
               iste vero dolor voluptates.
             </p>
           </BodySection>
-          <Footer />
+          <Footer className={css(styles.footerstyl)} />
         </div>
       </React.Fragment>
     );
   }
 }
 
+const styles = StyleSheet.create({
+  app: {
+    height: '100vh',
+    maxWidth: '100vw',
+    position: 'relative',
+    fontFamily: 'Arial, Helvetica, sans-serif'
+  }
+  
+})
+
 App.defaultProps = {
-  isLoggedIn: true, // false,
+  isLoggedIn: true,
   logOut: () => {
     return;
   },
