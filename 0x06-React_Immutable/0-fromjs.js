@@ -15,4 +15,4 @@ const oldMethod = {
 };
 
 const newMethod = getImmutableObject(oldMethod);
-console.log(newMethod);
+console.log(newMethod.toString());
