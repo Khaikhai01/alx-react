@@ -1,10 +1,11 @@
-const { fromJS } = require('immutable');
+const { fromJS, Map } = require('immutable');
 
-function getImmutableObject (object) {
-    if (typeof object !== 'object' || object === null) {
-        throw new Error('Input must be a valid object');
+function getImmutableObject (obj) {
+    if (typeof obj !== 'object' || obj === null) {
+        throw new Error('Input must be a valid object')
     }
-    return fromJS(object);
+
+    return fromJS(obj);
 }
 
 const oldMethod = {
@@ -15,4 +16,5 @@ const oldMethod = {
 };
 
 const newMethod = getImmutableObject(oldMethod);
+
 console.log(newMethod.toString());
