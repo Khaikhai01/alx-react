@@ -1,12 +1,19 @@
 const { fromJS, Map } = require('immutable');
 
-function getImmutableobjectect (object) {
-    if (typeof object !== 'object' || object === null) {
-        throw new Error('Input must be a valid object')
-    }
+// function getImmutableobjectect (object) {
+//     if (typeof object !== 'object' || object === null) {
+//         throw new Error('Input must be a valid object')
+//     }
 
-    return fromJS(object);
-}
+//     return fromJS(object);
+// }
+
+function getImmutableObject(object) {
+    // Convert the object to an immutable Map
+    const immutableMap = fromJS(object);
+  
+    return immutableMap;
+  }
 
 const oldMethod = {
     fear: true,
@@ -15,6 +22,6 @@ const oldMethod = {
     thing: -914767132
 };
 
-const newMethod = getImmutableobjectect(oldMethod);
+const newMethod = getImmutableObject(oldMethod);
 
 console.log(newMethod);
