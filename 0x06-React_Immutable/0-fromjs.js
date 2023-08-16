@@ -1,4 +1,4 @@
-const { fromJS } = require('immutable');
+const { Map, fromJS } = require('immutable');
 
 function getImmutableObject (object) {
   if (typeof object !== 'object' || object === null) {
@@ -15,4 +15,4 @@ const oldMethod = {
 };
 
 const newMethod = getImmutableObject(oldMethod);
-console.log(newMethod.toString());
+console.log(newMethod);
