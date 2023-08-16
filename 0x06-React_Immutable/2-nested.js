@@ -1,8 +1,5 @@
 import { fromJS } from 'immutable';
 export default function accessImmutableObject(object, array) {
-  if (!object || !Array.isArray(array) || array.length === 0) {
-    return undefined;
-  }
   
   let currentVal = object;
 
