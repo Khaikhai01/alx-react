@@ -1,11 +1,12 @@
-import { fromJS } from 'immutable';
+import { Map } from 'immutable';
+// const { Map } = require('immutable');
 
 function getImmutableObject (object) {
   if (typeof object !== 'object' || object === null) {
     throw new Error('Input must be a valid object')
   };
 
-  return fromJS(object);
+  return Map(object);
 }
 
 const oldMethod = {
